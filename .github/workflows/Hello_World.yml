@@ -1,21 +1,18 @@
-#nombre
-name:  My first workflow
+name: My first workflow
 
-#Evento
 on:  
   workflow_dispatch:
 
-#Jobs
 jobs:
   Tarea1:
     runs-on: ubuntu-latest
 
     steps:
-      -  name: Digo Hola
-         run: echo "Hola a todos"
+      - name: Digo Hola
+        run: echo "Hola a todos"
 
-      -  name: Quien soy
-         run: whoami
+      - name: Quien soy
+        run: whoami
 
-      -  name: Fecha de hoy
-         run: date
+      - name: Fecha de hoy
+        run: date
